@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Band</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -13,12 +14,12 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#the-band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -43,7 +44,7 @@
         </div>
 
         <div id="content">
-            <div class="section-content">
+            <div id="the-band" class="section-content">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -57,22 +58,22 @@
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="member-list">
-                    <div class="member-item">
+                    <div class="col col-three text-center">
                         <p class="name-member">Name</p>
                         <img src="/assets/img/bandmember.jpg" alt="member" class="member">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-three text-center">
                         <p class="name-member">Name</p>
                         <img src="/assets/img/bandmember.jpg" alt="member" class="member">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-three text-center">
                         <p class="name-member">Name</p>
                         <img src="/assets/img/bandmember.jpg" alt="member" class="member">
                     </div>
                 </div>
             </div>
 
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="section-content">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -83,32 +84,32 @@
                     </ul>
 
                     <div class="place-list">
-                        <div class="place-item">
+                        <div class="col col-three">
                             <img src="/assets/img/newyork.jpg" alt="new-york" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading"> New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-tickets"> Buy Tickets</a>
+                                <a href="#" class="btn"> Buy Tickets</a>
                             </div>
 
                         </div>
-                        <div class="place-item">
+                        <div class="col col-three">
                             <img src="/assets/img/paris.jpg" alt="paris" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading"> Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-tickets"> Buy Tickets</a>
+                                <a href="#" class="btn"> Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-three">
                             <img src="/assets/img/sanfran.jpg" alt="san-fran" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading"> San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-tickets"> Buy Tickets</a>
+                                <a href="#" class="btn"> Buy Tickets</a>
                             </div>
                         </div>
                     </div>
@@ -116,16 +117,55 @@
                 </div>
             </div>
 
-            <div class="section-content">
+            <div id="contact" class="section-content">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-two contact-info">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-two contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-two ">
+                                    <input type="text" name="" id="" placeholder="Name" required class="form-control">
+                                </div>
+                                <div class="col col-two">
+                                    <input type="email" name="" id="" placeholder="Email" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-full mt-8">
+                                    <input type="text" name="" id="" placeholder="Message" required
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" class="btn mt-16 btn-primary" value="SEND">
+                        </form>
+                    </div>
+                </div>
 
             </div>
 
         </div>
 
-        <div id="footer">
+        <div>
+            <img class="map-img" src="/assets/img/map.jpg" alt="map">
+        </div>
 
+        <div id="footer">
+            <div class="social-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+            </div>
+            <p class="copyright"> Powered by <a href="">w3.css</a></p>
         </div>
     </div>
 </body>
